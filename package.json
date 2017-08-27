@@ -1,0 +1,31 @@
+{
+  "name": "ppx_bsx_example",
+  "version": "0.0.1",
+  "main": "index.ml",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --env=dev",
+    "dist": "rimraf ./dist && webpack --env=dist"
+  },
+  "devDependencies": {
+    "bs-loader": "^1.6.0",
+    "bs-platform": "^1.9.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "ppx_bsx": "^1.0.3",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "next",
+    "reason-react": "^0.2.3"
+  }
+}

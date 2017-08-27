@@ -1,0 +1,14 @@
+{
+  "name": "ppx_bsx_example",
+  "reason": {
+    "react-jsx": 2
+  },
+  "bsc-flags": ["-bs-super-errors"],
+  "ppx-flags": ["./node_modules/ppx_bsx/bin/ppx_bsx.exe"],
+  "bs-dependencies": ["reason-react"],
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ]
+}
