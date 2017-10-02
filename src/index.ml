@@ -1,10 +1,9 @@
-let () = 
-  ReactDOMRe.renderToElementWithId 
+let () =
+  ReactDOMRe.renderToElementWithId
     [%bsx "<Welcome name='ReasonML' />"]
     "root";
 
-  [%bs.raw
-    {|
+  [%bs.raw {|
     (() => {
       if (!module.hot) return;
       module.hot.accept("./welcome.ml", () => {
@@ -16,5 +15,4 @@ let () =
         );
       });
     })()
-|}
-  ];
+|}]
