@@ -8,7 +8,7 @@ const common = env => {
     context: resolve(__dirname, "src"),
 
     resolve: {
-      extensions: [".ml", ".js", ".scss"]
+      extensions: [".js", ".scss"]
     },
 
     output: {
@@ -28,10 +28,6 @@ const common = env => {
         {
           test: /\.(png|svg|jpg|gif)$/i,
           use: ["file-loader"]
-        },
-        {
-          test: /\.ml$/,
-          use: "bs-loader"
         }
       ]
     }
@@ -45,11 +41,13 @@ module.exports = function(env) {
     common(env),
     env === "dev"
       ? {
+          mode: "development",
+
           entry: [
             "react-hot-loader/patch",
             "webpack-dev-server/client?http://localhost:" + devSrvPort,
             "webpack/hot/only-dev-server",
-            "./index.ml"
+            "./index.bs"
           ],
 
           devServer: {
@@ -66,7 +64,9 @@ module.exports = function(env) {
           ]
         }
       : {
-          entry: ["./index.ml"],
+          mode: "production",
+
+          entry: ["./index.bs"],
 
           plugins: [
             new CopyWebpackPlugin([

@@ -1,6 +1,7 @@
 dist
 lib
-.merlin 
+.merlin
+*.bs.js
 
 # Created by https://www.gitignore.io/api/code,node,ocaml
 

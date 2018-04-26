@@ -10,8 +10,9 @@ let make ~name _ =
          <div className="class_name">
            <img src="[%bs.raw {|require('./logo.png')|}]" />
            <h1>
-             "("Hello " ^ name |> ReasonReact.stringToElement)"
+             "("Hello " ^ name |> ReasonReact.string)"
           </h1>
+          <p>"{|你好，世界！|}"</p>
          </div>
         "]
       )

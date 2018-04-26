@@ -3,11 +3,11 @@ let () =
     [%bsx "<Welcome name='ReasonML' />"]
     "root";
 
-  [%bs.raw {|
+  [%raw {|
     (() => {
       if (!module.hot) return;
-      module.hot.accept("./welcome.ml", () => {
-        const next = require("./welcome.ml");
+      module.hot.accept("./welcome.bs", () => {
+        const next = require("./welcome.bs");
         // tips: you can copy from lib/js/index.js
         ReactDOMRe.renderToElementWithId(
           ReasonReact.element(0, 0, next.make("ReasonML", [])),
@@ -15,4 +15,4 @@ let () =
         );
       });
     })()
-|}]
+  |}]
