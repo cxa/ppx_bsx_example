@@ -1,7 +1,9 @@
 dist
 lib
 .merlin
+.bsb.lock
 *.bs.js
+_opam
 
 # Created by https://www.gitignore.io/api/code,node,ocaml
 

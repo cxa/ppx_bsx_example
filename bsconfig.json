@@ -1,12 +1,18 @@
 {
   "name": "ppx_bsx_example",
+  "reason": {
+    "react-jsx": 3
+  },
+  "ppx-flags": [
+    "../ppx_bsx/_opam/bin/ppx_bsx",
+    "./node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3"
+  ],
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
   "suffix": ".bs.js",
   "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
-  "ppx-flags": ["./node_modules/ppx_bsx/bin/ppx_bsx.exe"],
   "bs-dependencies": ["reason-react"],
   "sources": [
     {
