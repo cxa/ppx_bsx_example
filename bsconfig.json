@@ -4,7 +4,7 @@
     "react-jsx": 3
   },
   "ppx-flags": [
-    "../ppx_bsx/_opam/bin/ppx_bsx",
+    "./_opam/bin/ppx_bsx",
     "./node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3"
   ],
   "package-specs": {
